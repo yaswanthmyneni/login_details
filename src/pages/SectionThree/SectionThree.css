@@ -1,0 +1,25 @@
+.sec_three_input {
+  height: 4.375rem;
+  width: 4.375rem;
+}
+
+.gap_3_5rem {
+  gap: 3.5rem;
+}
+
+.otp_flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  border: 0;
+  outline: none;
+}
+
+.color_blue {
+  color: var(--main-bg-color);
+}
+
+.text_center {
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.hide_icon {
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: var(--main-bg-color);
+}
+
+.s5_input_container {
+    display: flex;
+    align-items: center;
+}
+
+.s5_p_tag {
+    margin-top: 4px;
+}

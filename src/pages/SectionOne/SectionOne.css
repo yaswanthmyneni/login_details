@@ -1,0 +1,21 @@
+.acc_button {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #d9e0e6;
+  border-radius: 1rem;
+  width: 60%;
+  height: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.acc_selected {
+  border-color: var(--main-bg-color);
+  color: var(--main-bg-color);
+}
+
+.done_icon {
+  font-size: 1.5rem;
+  margin-left: auto;
+}
