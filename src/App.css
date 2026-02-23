@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 #root {
-  padding: 2rem;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #f6f7f9;
   color: #132c4a;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
 }
 
 .m_t_auto {
@@ -16,6 +21,10 @@
 .m_y_0 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.m_t_0 {
+  margin-top: 0;
 }
 
 .m_l_1rem {

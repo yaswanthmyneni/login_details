@@ -6,6 +6,10 @@
   --white-color: #ffffff;
 }
 
+.section {
+  padding: 3rem;
+}
+
 .login_icon {
   width: 38rem;
   height: 32rem;
@@ -20,15 +24,13 @@
   position: absolute;
   right: 3rem;
   top: 3rem;
-  bottom: 0;
   z-index: 9;
 }
 
 .login_container {
   width: 43rem;
-  height: 80vh;
+  height: 75vh;
   border-radius: 1rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 2rem;
   background-color: var(--white-color);
   display: flex;
@@ -56,7 +58,7 @@
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,7 +75,7 @@
   border-radius: 1rem;
   padding: 20px;
   margin: 100px auto;
-  width: 28rem;
+  width: 26rem;
   height: 26rem;
   text-align: center;
 }
@@ -100,7 +102,7 @@
 }
 
 .details_container_2 {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

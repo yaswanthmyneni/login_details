@@ -33,20 +33,18 @@ const LoginPage = () => {
   const handleDashboardBtn = () => {
     setSection(1);
     setOpenModal(false);
+    set_P_Width("25%");
   };
 
   useEffect(() => {
-    if (section === 1) {
-      set_P_Width("20%");
-    }
     if (section === 2) {
-      set_P_Width("40%");
+      set_P_Width("25%");
     }
     if (section === 3) {
-      set_P_Width("60%");
+      set_P_Width("50%");
     }
     if (section === 4) {
-      set_P_Width("80%");
+      set_P_Width("75%");
     }
     if (section === 5) {
       set_P_Width("100%");
@@ -54,17 +52,17 @@ const LoginPage = () => {
   }, [section]);
 
   return (
-    <>
-      <h2 className="f_w_300">Let's get started</h2>
+    <section className="section">
+      <h2 className="f_w_300 m_t_0">Let's get started</h2>
       <h1 className="h1_tag ">Create your account</h1>
       <p className="f_w_400">Follow the steps to create your account</p>
       <img className="login_icon" src={loginImage} alt="login_image" />
       <div className="login_right_pos">
-        <div className="p_bar_container">
+        {section !== 1 && <div className="p_bar_container">
           <div className="progress_bar">
             <div className="progress_fill" style={{ width: p_width }}></div>
           </div>
-        </div>
+        </div>}
         <div className="login_container">
           {section === 1 && <SectionOne setData={setData} />}
           {section === 2 && <SectionTwo setData={setData} data={data} />}
@@ -97,7 +95,7 @@ const LoginPage = () => {
                 </div>
                 <div className=" details_flex">
                   <p className="title">Email</p>
-                  <p className="value f_s_500">jo...@example.com</p>
+                  <p className="value f_s_500">jo....@example.com</p>
                 </div>
                 <div className=" details_flex">
                   <p className="title">Name</p>
@@ -126,7 +124,7 @@ const LoginPage = () => {
           </div>
         </div>
       )}
-    </>
+    </section>
   );
 };
 
